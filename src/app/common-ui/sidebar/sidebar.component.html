@@ -1,0 +1,14 @@
+<h1>Sidebar</h1>
+
+<nav>
+  <ul class="menu">
+    @for(menuItem of menuItems; track menuItem.url){
+    <li class="menu-item">
+      <a routerLink="{{ menuItem.url }}">{{ menuItem.label }}</a>
+    </li>
+    }
+    <li class="menu-item">
+      <a (click)="logout()">Выход</a>
+    </li>
+  </ul>
+</nav>

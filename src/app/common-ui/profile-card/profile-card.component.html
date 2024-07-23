@@ -1,0 +1,29 @@
+<!-- src="{{ profile.avatarUrl | imgUrl }}" -->
+
+<div class="profile-card">
+  <div class="profile-card-avatar">
+    <img
+      src="/assets/avatars/avatar1.png"
+      alt=""
+      class="profile-card-avatar__image"
+    />
+    <div class="profile-card-avatar__name">
+      <strong>{{ profile.firstName }}</strong>
+      <span>{{ profile.lastName }}</span>
+    </div>
+  </div>
+  <div class="profile-card-description">
+    {{ profile.description }}
+  </div>
+  <div class="profile-card-tags">
+    @for(skill of profile.stack; track skill){ @if(skill.length > 8){
+    <span class="profile-card-tag">{{ skill }}</span>
+    } @else{
+    <span class="profile-card-tag profile-card-tag-primary">{{ skill }}</span>
+    } }
+  </div>
+  <div class="profile-card-actions">
+    <button class="btn btn-primary" (click)="delete(profile.id)">Delete</button>
+    <button class="btn">Message</button>
+  </div>
+</div>

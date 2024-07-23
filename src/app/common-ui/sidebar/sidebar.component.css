@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+  padding: 20px 12px;
+}
+.menu-item {
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.15s;
+  border: 1px solid transparent;
+}
+
+.menu-item a {
+  padding: 10px 20px;
+  display: block;
+}
+
+.menu-item:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}

@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 123,
+      "username": "dimonshev",
+      "avatarUrl": "static/avatars/dimonshev.jpg",
+      "subscribersAmount": 174,
+      "firstName": "Дмитрий",
+      "lastName": "Шевченко",
+      "isActive": true,
+      "stack": [
+        "Python",
+        "Django",
+        "FastAPI",
+        "React",
+        "SQLAlchemy",
+        "PostgreSQL",
+        "Alembic",
+        "Docker"
+      ],
+      "city": "Москва",
+      "description": "Я python-backend разработчик из Москвы, люблю писать код и помогать другим!"
+    },
+    {
+      "id": 124,
+      "username": "michael123",
+      "avatarUrl": "static/avatars/michael123.jpg",
+      "subscribersAmount": 173,
+      "firstName": "Миша",
+      "lastName": "Сергеев",
+      "isActive": true,
+      "stack": [
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "React",
+        "MongoDB",
+        "GraphQL",
+        "Apollo Server",
+        "Docker"
+      ],
+      "city": "Saratov",
+      "description": "Я JS разработчик из Санкт-Петербурга, всегда на связи!"
+    },
+    {
+      "id": 125,
+      "username": "annsam",
+      "avatarUrl": "static/avatars/annsam.jpg",
+      "subscribersAmount": 172,
+      "firstName": "Анна",
+      "lastName": "Самойлова",
+      "isActive": true,
+      "stack": ["Pytest", "autotest", "unittest", "Python"],
+      "city": "Moscow",
+      "description": "Я тестировщик, которого не боятся :)"
+    },
+    {
+      "id": 126,
+      "username": "alexsmirn",
+      "avatarUrl": "static/avatars/alexsmirn.jpg",
+      "subscribersAmount": 171,
+      "firstName": "Алексей",
+      "lastName": "Смирнов",
+      "isActive": true,
+      "stack": ["TypeScript", "Node.js", "Angular"],
+      "city": "Екатеринбург",
+      "description": "Я Angular разработчик, спец по сайтам и фрилансу!"
+    },
+    {
+      "id": 127,
+      "username": "tatsiko",
+      "avatarUrl": "static/avatars/tatsiko.jpg",
+      "subscribersAmount": 170,
+      "firstName": "Татьяна",
+      "lastName": "Конькова",
+      "isActive": true,
+      "stack": ["C++", "Qt", "Linux", "CMake", "PostgreSQL", "C#", "Docker"],
+      "city": "Москва",
+      "description": "Я C++ разработчик, прошел три круга ада и знаю все, что нужно!"
+    }
+  ]
+}

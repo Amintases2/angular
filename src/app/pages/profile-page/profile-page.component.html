@@ -1,0 +1,6 @@
+<div [style.padding-bottom.px]="20">
+  <p [style.color]="isInstalled ? 'green' : 'red'">Installed</p>
+  <button mat-raised-button (click)="openDialog('15ms', '15ms')">
+    Open dialog without animation
+  </button>
+</div>

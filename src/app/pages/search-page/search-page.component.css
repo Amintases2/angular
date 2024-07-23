@@ -1,0 +1,5 @@
+.profile-cards {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}

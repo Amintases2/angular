@@ -1,0 +1,5 @@
+<div class="profile-cards">
+  @for (profile of profiles$ | async ; track profile.id) {
+  <app-profile-card [profile]="profile"></app-profile-card>
+  }
+</div>
