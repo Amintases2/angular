@@ -5,23 +5,21 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { provideStore, StoreModule } from '@ngrx/store';
+import { combineReducers, provideStore, StoreModule } from '@ngrx/store';
 import { counterReducer } from './store/counter.reducer';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
+import { CounterEffects } from './store/counter.effects';
+import { reducers } from './reducers';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({ count: counterReducer }),
+    StoreModule.forRoot(reducers),
     StoreRouterConnectingModule.forRoot(),
-    StoreDevtoolsModule.instrument({
-      name: 'Angular NgRx Store',
-      logOnly: true,
-    }),
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([CounterEffects]),
     HttpClientModule,
   ],
   providers: [
